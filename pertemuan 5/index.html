@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <!-- goggle fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <i class="fa fa-bars" id="toggle"></i>
+                <span>Budidarma Programming Club</span>
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-square-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-square-whatsapp"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-content">
+                <div class="side-content">
+                    <span>sidebar content :</span>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-home"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-address-card"></i>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-gear"></i>
+                                <span>Service</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-contact-book"></i>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-layer-group"></i>
+                                <span>Community</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="side-footer">
+                    <span>sidebar footer :</span>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-user"></i>
+                                <span>Account</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-arrow-right-from-bracket"></i>
+                                <span>Log Out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar-footer">
+                <span>Copyright &copy; 2023. Budidarma Programming Club.</span>
+                <p>&copy;</p>
+            </div>
+        </aside>
+
+        <main class="content" id="content">
+            <h3>Testing</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore illum laborum dolor totam recusandae asperiores, perferendis minus debitis amet deserunt incidunt id itaque ratione in, voluptate soluta labore exercitationem expedita molestiae voluptatum. Repellat, harum iure? Eligendi nisi iusto nostrum a similique quaerat magnam veritatis veniam ipsam unde illo animi incidunt, labore ipsa, impedit deleniti fugit ex totam aperiam beatae consequatur est. Tempore magni itaque voluptates repudiandae dolores asperiores, tenetur aliquid alias dolore recusandae culpa laudantium ad sed nostrum error in, quasi maxime voluptas qui quidem, laboriosam est quia porro vel? Vel, odit. Non consequatur voluptate nostrum quod adipisci eveniet ipsum?</p>
+            <div class="container">
+                <button type="button" class="btn" id="btn">Click Me</button>
+                <div class="card" id="card">
+                    <div class="card-header">
+                        <h2>Testing Modal</h2>
+                        <span>Testing Pembuatan Modal Menggunakan Native</span>
+                    </div>
+                    <div class="card-body">
+                        <form action="" method="post">
+                            <div class="text-box">
+                                <label for="nfile">Nama File</label>
+                                <input type="text" id="nfile" required>
+                            </div>
+                            <div class="text-box">
+                                <label for="file">File</label>
+                                <input type="file" id="file" required>
+                            </div>
+                            <div class="text-box">
+                                <label for="description">Deskripsi File</label>
+                                <textarea  id="description"></textarea>
+                            </div>
+                            <button type="button" class="button">Kirim</button>
+                            <a href="#" id="back" style="color: #fff; text-align: center; text-decoration: none;">Return Back</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- js -->
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>

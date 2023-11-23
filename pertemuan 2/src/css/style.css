@@ -1,0 +1,44 @@
+/* css manual */
+/* .wrapper .card {
+    background-color: blue;
+    width: max-content;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.wrapper .card .card-body .form-group label {
+    display: block;
+}
+
+.wrapper .card .card-body .form-group input {
+    background-color: orange;
+} */
+
+/* css sass */
+.wrapper {
+    .card {
+        background-color: blue;
+        width: max-content;
+        color: #fff;
+        padding-block: 10px;
+        padding-inline: 20px;
+
+        .card-header {
+            & h2 {
+                text-align: center;
+            }
+        }
+
+        .card-body {
+            .form-group {
+                & label {
+                    display: block;
+                }
+
+                & input {
+                    background-color: orange;
+                }
+            }
+        }
+    }
+}
