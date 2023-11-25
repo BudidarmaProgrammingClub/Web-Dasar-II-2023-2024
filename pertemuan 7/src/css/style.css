@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding-inline: 50px;
+    box-shadow: 1px 0 5px #00000030;
+
+    .navbar-brand {
+        & a {
+            text-decoration: none;
+            color: black;
+            /* font-size: 17px; */
+        }
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        column-gap: 25px;
+
+        & li {
+            list-style: none;
+
+            & a {
+                text-decoration: none;
+                color: black;
+                transition: .2s;
+
+                &.active {
+                    color: orange;
+                    text-decoration: underline;
+                }
+
+                &:is(:hover, :focus) {
+                    color: orange;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .button {
+        & a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding-inline: 12px;
+            padding-block: 7px;
+            background-color: blue;
+            border-radius: 4px;
+            transition: .3s;
+
+            &:hover {
+                background-color: rgb(0, 0, 180);
+            }
+        }
+    }
+}
+
+main {
+    padding-inline: 50px;
+
+    .hero-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 25px;
+        height: 100vh;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .name {
+                font-size: 23px;
+                font-weight: 500;
+
+                & span {
+                    display: block;
+                    color: orange;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+            }
+
+            & h1 {
+                font-size: 70px;
+                font-weight: 600;
+                line-height: 75px;
+                padding-block: 22px;
+
+                & span {
+                    margin-left: 1em;
+                }
+            }
+
+            .text {
+                font-size: 20px;
+            }
+
+            .icon {
+                margin-block: 25px;
+
+                & a {
+                    font-size: 30px;
+                    margin-inline: 7px;
+                    color: black;
+                }
+            }
+
+            .button {
+                margin-top: 15px;
+                
+                & a {
+                    text-decoration: none;
+                    padding-inline: 20px;
+                    padding-block: 12px;
+                    background-color: orange;
+                    color: white;
+                    font-weight: 500;
+                    border-radius: 4px;
+                    transition: .3s;
+
+                    &:is(:hover, :focus) {
+                        background-color: rgb(214, 139, 0);
+                    }
+                }
+            }
+        }
+
+        .hero {
+            display: grid;
+            place-items: center;
+
+            & img {
+                width: 550px;
+                height: 325px;
+            }
+        }
+    }
+}
