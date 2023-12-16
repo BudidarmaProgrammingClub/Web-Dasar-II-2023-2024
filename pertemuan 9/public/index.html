@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Tailwindcss</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="font-inter">
+
+    <!-- header -->
+    <header class="fixed flex items-center px-10 max-lg:px-8 max-sm:px-5 w-full min-h-[65px] bg-white shadow-md text-slate-800">
+        <div class="title">
+            <h1 class="text-2xl font-semibold max-lg:hidden">Budidarma Programming Club</h1>
+            <h1 class="text-2xl font-semibold lg:hidden">BPC</h1>
+        </div>
+
+        <!-- nabvar -->
+        <ul id="menu" class="lg:ms-auto flex flex-row items-center font-medium gap-3 [&.active]:max-lg:flex-col max-lg:hidden [&.active]:max-lg:block [&.active]:max-lg:absolute [&.active]:max-lg:left-0 [&.active]:max-lg:px-8 [&.active]:max-sm:px-5 [&.active]:max-lg:w-full [&.active]:max-lg:h-max [&.active]:max-lg:bg-white [&.active]:max-lg:shadow-md [&.active]:max-lg:top-12 [&.active]:max-lg:pb-5 [&.active]:max-lg:pt-2">
+            <li><a href=""
+                    class="outline-none transition-colors duration-300 ease-in-out hover:text-sky-500 focus:text-ky-500">Home</a>
+            </li>
+            <li><a href=""
+                    class="outline-none transition-colors duration-300 ease-in-out hover:text-sky-500 focus:text-sky-500">About</a>
+            </li>
+            <li><a href=""
+                    class="outline-none transition-colors duration-300 ease-in-out hover:text-sky-500 focus:text-sky-500">Portfolio</a>
+            </li>
+            <li><a href=""
+                    class="outline-none transition-colors duration-300 ease-in-out hover:text-sky-500 focus:text-sky-500">Contact</a>
+            </li>
+            <li>
+                <form action="" method="get" class="flex max-lg:mt-1">
+                    <input type="search" name="search" id="search"
+                        class="lg:w-full max-sm:w-full h-10 px-2 border rounded-l-md outline-none" placeholder="Search">
+                    <button type="button"
+                        class="bg-sky-500 text-white px-3 outline-none rounded-r-md transition-colors duration-300 ease-in-out hover:bg-sky-600 focus:bg-sky-600">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </li>
+        </ul>
+
+        <!-- icon mode -->
+        <div class="lg:ms-3 max-lg:ms-auto max-lg:me-3">
+            <a href="" onclick="return false" class="text-xl">
+                <i class="fa fa-moon"></i>
+            </a>
+        </div>
+
+        <!-- toggle menu -->
+        <div class="lg:hidden">
+            <a href="" onclick="return false" id="toggleButton" class="text-xl"><i class="fa fa-bars"></i></a>
+        </div>
+    </header>
+
+    <!-- script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
