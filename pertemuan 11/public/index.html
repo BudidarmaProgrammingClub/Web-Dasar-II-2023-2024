@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 11 | BPC</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="font-inter transition-colors duration-300 ease-in-out dark:bg-slate-900 dark:text-slate-100">
+
+    <!-- header -->
+    <header
+        class="relative flex items-center px-10 max-lg:px-8 max-sm:px-5 w-full min-h-[65px] bg-white transition-colors duration-300 ease-in-out shadow-md text-slate-800 dark:bg-slate-900 dark:text-slate-100 dark:shadow-slate-50/20">
+        <div class="title">
+            <h1 class="text-2xl font-semibold max-lg:hidden">Budidarma Programming Club</h1>
+            <h1 class="text-2xl font-semibold lg:hidden">BPC</h1>
+        </div>
+
+        <!-- nabvar -->
+        <ul id="menu"
+            class="lg:ms-auto flex flex-row items-center font-medium transition-colors duration-300 ease-in-out gap-3 max-sm:text-sm [&.active]:max-lg:flex-col max-lg:hidden [&.active]:max-lg:block [&.active]:max-lg:absolute [&.active]:max-lg:left-0 [&.active]:max-lg:px-8 [&.active]:max-sm:px-5 [&.active]:max-lg:w-full [&.active]:max-lg:h-max [&.active]:max-lg:bg-white [&.active]:max-lg:dark:bg-slate-900 [&.active]:max-lg:dark:text-slate-100 [&.active]:max-lg:shadow-md [&.active]:max-lg:dark:shadow-slate-50/20 [&.active]:max-lg:top-12 [&.active]:max-lg:pb-5 [&.active]:max-lg:pt-2">
+            <li class="max-lg:py-1"><a href=""
+                    class="outline-none transition-colors duration-300 ease-in-out hover:text-sky-500 focus:text-ky-500">Home</a>
+            </li>
+            <li class="max-lg:py-1"><a href=""
+                    class="outline-none transition-colors duration-300 ease-in-out hover:text-sky-500 focus:text-sky-500">About</a>
+            </li>
+            <li class="max-lg:py-1"><a href=""
+                    class="outline-none transition-colors duration-300 ease-in-out hover:text-sky-500 focus:text-sky-500">Portfolio</a>
+            </li>
+            <li class="max-lg:py-1"><a href=""
+                    class="outline-none transition-colors duration-300 ease-in-out hover:text-sky-500 focus:text-sky-500">Contact</a>
+            </li>
+            <li class="max-lg:py-1">
+                <form action="" method="get" class="flex font-normal max-lg:mt-1">
+                    <input type="search" name="search" id="search"
+                        class="lg:w-full max-sm:w-full transition-colors duration-300 ease-in-out dark:bg-slate-800 dark:text-slate-50 dark:border-none h-10 px-2 border rounded-l-md outline-none"
+                        placeholder="Search">
+                    <button type="button"
+                        class="bg-sky-500 text-white px-3 max-sm:px-5 outline-none rounded-r-md transition-colors duration-300 ease-in-out hover:bg-sky-600 focus:bg-sky-600">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </li>
+        </ul>
+
+        <!-- icon mode -->
+        <div
+            class="relative overflow-hidden w-9 h-9 max-sm:h-7 max-sm:w-7 shadow transition-colors duration-300 ease-in-out dark:shadow-slate-100/70 rounded-full flex justify-center items-center bg-slate-900 text-slate-50 dark:bg-slate-100 dark:text-slate-900 lg:ms-3 max-lg:ms-auto max-lg:me-3">
+            <a href="" id="toggleTheme" onclick="return false" class="text-xl p-5 max-sm:text-base">
+                <i class="fa fa-moon"></i>
+            </a>
+        </div>
+
+        <!-- toggle menu -->
+        <div class="lg:hidden">
+            <a href="" onclick="return false" id="toggleButton" class="text-xl"><i class="fa fa-bars"></i></a>
+        </div>
+    </header>
+
+    <main class="mt-5 h-[80vh] px-10 max-lg:px-8 max-sm:px-5 max-sm:mt-3 max-sm:text-sm">
+        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At perferendis sequi atque
+            illum non adipisci sed
+            reprehenderit esse nisi neque eligendi deleniti voluptas eius dolor voluptatem, magnam veritatis eaque
+            nostrum minima quae! Voluptas amet sunt, pariatur quisquam assumenda ut, ab commodi nihil dolores ipsam
+            porro dolorem, ipsum voluptatibus sed consectetur sint quaerat quam soluta tenetur laborum sequi! Incidunt
+            doloremque delectus quas accusamus saepe vel aut a libero nisi, laudantium ea laborum nihil repellendus
+            voluptates quam. Cumque delectus corrupti suscipit illo nam accusamus debitis ad sed nobis maiores.
+            Temporibus assumenda architecto quam, culpa maxime placeat dolor, amet velit et quibusdam molestias,
+            veritatis saepe hic provident quae delectus id fugit neque itaque consequuntur dolores eaque ea. Eaque
+            sapiente vitae, deleniti voluptate rem ex, ut fugiat ipsum quas numquam eligendi quidem architecto eius?
+            Deleniti, quasi id saepe eos possimus dolorum repellat cupiditate repudiandae quo veniam dignissimos laborum
+            nesciunt iure a laboriosam explicabo itaque.</p>
+    </main>
+
+    <footer
+        class="relative bottom-0 shadow-inner transition-colors duration-300 ease-in-out bg-white dark:bg-slate-900 dark:shadow-slate-50/50 dark:shadow">
+        <div
+            class="grid grid-cols-4 max-lg:grid-cols-2 max-sm:grid-cols-1 py-10 px-10 max-lg:px-8 max-sm:px-5 max-sm:py-3">
+            <section class="col-span-2 w-[90%] max-sm:col-span-1 max-sm:text-sm">
+                <h1 class="text-3xl max-sm:text-2xl font-bold">Budidarma Programming Club</h1>
+                <h3 class="py-2 italic">Jl. Sisingamangaraja No.338, Siti Rejo I, Kec. Medan Kota, Kota Medan, Sumatera
+                    Utara 20219</h3>
+                <ul class="font-medium">
+                    <li class="py-1">
+                        <a href="" onclick="return false"
+                            class="outline-none transition-colors duration-300 ease-in-out hover:text-sky-500 focus:text-sky-500">
+                            <i class="fa fa-envelope"></i>
+                            <span>Email : example@gmail.com</span>
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a href="" onclick="return false"
+                            class="outline-none transition-colors duration-300 ease-in-out hover:text-sky-500 focus:text-sky-500">
+                            <i class="fa fa-phone"></i>
+                            <span>Telephone : +62-8XX-XXXX-XXXX</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="col-span-1 max-lg:mt-8 lg:-ml-10 max-sm:mt-5 max-sm:text-sm">
+                <h3 class="text-xl max-sm:text-lg font-bold">Other Links :</h3>
+                <ul>
+                    <li class="py-1">
+                        <a href=""
+                            class="outline-none transition-colors duration-300 ease-in-out hover:text-sky-500 focus:text-sky-500">
+                            <i class="fa-solid fa-angle-right"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a href=""
+                            class="outline-none transition-colors duration-300 ease-in-out hover:text-sky-500 focus:text-sky-500">
+                            <i class="fa-solid fa-angle-right"></i>
+                            About
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a href=""
+                            class="outline-none transition-colors duration-300 ease-in-out hover:text-sky-500 focus:text-sky-500">
+                            <i class="fa-solid fa-angle-right"></i>
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a href=""
+                            class="outline-none transition-colors duration-300 ease-in-out hover:text-sky-500 focus:text-sky-500">
+                            <i class="fa-solid fa-angle-right"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="col-span-1 w-full lg:-ml-16 max-lg:mt-8 max-sm:mt-5 max-sm:text-sm">
+                <form action="" method="get">
+                    <label for="search" class=" font-medium">Search :</label>
+                    <div class="flex py-2 max-sm:gap-0">
+                        <input type="search" name="search" id="search"
+                            class="w-full h-12 max-lg:h-11 max-sm:h-10 px-3 border rounded-md rounded-r-none outline-none transition-colors duration-300 ease-in-out dark:bg-slate-800 dark:border-none dark:text-slate-50"
+                            placeholder="Search">
+                        <button type="button"
+                            class="bg-sky-500 text-white w-16 max-sm:w-16  outline-none rounded-md rounded-l-none transition-colors duration-300 ease-in-out hover:bg-sky-600 focus:bg-sky-600">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <ul class="flex gap-x-3 text-2xl max-sm:text-xl mt-2">
+                    <li>
+                        <a href=""
+                            class="outline-none transition-colors duration-300 ease-in-out hover:text-sky-500 focus:text-sky-500">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="outline-none transition-colors duration-300 ease-in-out hover:text-sky-500 focus:text-sky-500">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="outline-none transition-colors duration-300 ease-in-out hover:text-sky-500 focus:text-sky-500">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""
+                            class="outline-none transition-colors duration-300 ease-in-out hover:text-sky-500 focus:text-sky-500">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div
+            class="relative bottom-0 flex justify-center items-center w-full h-12 transition-colors duration-300 ease-in-out bg-slate-50 shadow-inner text-sm max-sm:text-xs dark:bg-slate-800">
+            <p>&copy;Copyright <a href=""
+                    class="text-sky-500 outline-none transition-colors duration-300 ease-in-out hover:text-sky-600 focus:text-sky-600"><span
+                        class="inline-block max-sm:hidden">Budidarma Programming Club</span><span
+                        class="hidden max-sm:inline-block">BPC</span></a>, 2023. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
